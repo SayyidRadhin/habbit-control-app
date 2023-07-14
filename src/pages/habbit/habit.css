@@ -1,0 +1,23 @@
+.grid-box{
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+}
+.habit-container{
+    width: 100%;
+    min-height: 100vb;
+    overflow: hidden;
+    max-width: 800px;
+    margin-inline: auto;
+    display: grid;
+    padding-inline: 2em;
+    align-items: center;
+    background-color: var(--neutral-verydark-blue);
+}
+.backround{
+    min-height: 100dvh;
+    background-color: var(--neutral-verydark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } 

@@ -1,0 +1,95 @@
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-inline: 1em;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 2;
+}
+
+.modal{
+    min-height: 70vh;
+    max-width: 40em;
+    margin: 0 auto;
+    border-radius: 1em;
+    margin-top: 1em;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+
+.register-login{
+    width: 80%;
+    max-width: 30em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+
+.submit-button{
+    margin-top: .4em;
+    width: 100%;
+    padding: .8em .8em;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: var(--neutral-Dark-blue);
+    transition: 500ms;
+    outline: none;
+    border: none;
+}
+
+.submit-button:hover{
+    background-color: hsl(236, 41%, 37%);
+    box-shadow: 0px 0px 3px 0px rgba(59, 20, 96,.5);
+}
+
+.register-login p{
+    font-size: 12px;
+    text-align: center;
+    opacity: .8;
+    margin-top: -.8em;
+    user-select: none;
+  
+}
+
+.register-login p span {
+    color: red;
+    font-size:13px ;
+    cursor: pointer;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.picker{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#time-pick{
+    display: inline-block;
+    padding: .6em 1em;
+    border-radius: 5px;
+    border-style: none;
+    border: 8px gray;
+}
+
+.form-Add{
+    gap: 1em;
+    display: grid;
+}
+
+@media (min-width: 30em) {
+    .picker{
+        flex-direction: row;
+    }
+}
+

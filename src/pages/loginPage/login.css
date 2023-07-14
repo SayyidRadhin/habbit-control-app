@@ -1,0 +1,33 @@
+.login-page{
+    max-width:70%;
+    padding: 2em;
+    background-color: hsl(226deg 26.09% 22.6%);
+    margin-inline: auto;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.login-page h1{
+    color: white;
+    opacity: .8;
+    font-size: 2em;
+    text-align: center;
+}
+
+.login-page button{
+    border: none;
+    color: white;
+    width: 100%;
+    margin-top: 2em;
+    border-radius: 10px;
+    padding: .5em 1em;
+    background-color:  hsl(235, 45%, 61%);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.login-page button:hover{
+    background-color:  hsl(235, 45%, 65%);
+    scale: 1.03;
+}

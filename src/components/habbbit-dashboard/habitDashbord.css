@@ -1,0 +1,163 @@
+.header-dashboard{
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+}
+
+.Dashboard{
+    padding-top: 4em;
+    display: flex;
+    flex: 1; 
+    min-height: 100vh;
+    flex-direction: column; 
+    min-width: 80%;
+    max-width: 900px;
+    margin-inline: auto;
+    padding-inline: 2em;
+    gap: 3em;
+}
+
+.header-dashboard .profile-box .select-option{
+    display: none;
+}
+
+.header-dashboard .profile-box{
+    flex: 3;
+}
+
+.header-dashboard .habbit-items{
+    min-width: 40%;
+}
+.header-dashboard .habit-items-box {
+    margin-top: 45px;
+}
+
+@media (min-width: 30em) {
+    .header-dashboard{
+        flex-direction: row;
+    }
+}
+
+
+
+.items-box{
+    width: 100%;
+    min-height: 56px;
+    background-color:hsl(348, 94%, 66%) ;
+    border-radius: 10px;
+
+}
+
+.header-dashboard .habit-items-box{
+    height: auto;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.completed{
+    text-align: center;
+}
+
+.completed h3{
+    font-size: 2em;
+    font-weight: 500;
+    color:hsl(235, 45%, 61%);
+}
+
+.completed p{
+    font-style: italic;
+    color: var( --neutral-Pale-Blue);
+}
+
+.items-box{
+    display: flex;
+    align-items: center;
+    padding: 1em 2em;
+    color: white;
+    font-weight:500;
+    justify-content: space-between;
+}
+
+.add-icon{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 4em;
+  border-radius: 10px;
+  background-color: hsl(235, 46%, 20%);
+  bottom: 0;
+}
+
+.flex-box-button{
+    display: flex;
+}
+
+.add-button{
+   min-width: 2em;
+   cursor: pointer;
+   border: none;
+    min-height: 2em;
+    color: rgb(91, 60, 164);
+    font-weight: 600;
+    border-radius: 10px;
+    padding: .7em;
+    background-color: #b580ff;
+    transition: .5s  ;
+}
+
+.add-button:hover{
+    scale: 1.1;
+}
+
+.items-display{
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(auto-fit,minmax(30%,1fr));
+    margin-bottom: 7em;
+}
+
+
+
+@media (max-width: 50em) {
+    .items-display{
+     grid-template-columns:1fr 1fr;
+    }
+ }
+ @media (max-width: 30em) {
+    .items-display{
+     grid-template-columns: 1fr;
+    }
+ }
+.dashContainer{
+    min-height: 100dvh;
+    background-color: var(--neutral-verydark-blue);
+    overflow: hidden;
+}
+
+.grid{
+    min-width: 100%;
+    display: grid;
+}
+
+.loading{
+    overflow: hidden;
+}
+
+
+.items-box{
+    display: grid;
+    grid-auto-flow: column;
+}
+.checkbox-toggle{
+    flex-basis: 4em;
+}
+
+
+
+
+
+
